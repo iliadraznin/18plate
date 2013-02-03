@@ -1,0 +1,15 @@
+/*!
+ * This is where all your custom styles go
+ */
+ 
+.demo .col {
+	font-size:1.6em;
+	border-radius:2px;
+	background:#5fbccf;
+	color:#fff;
+	font-weight:bold;
+	height:3em;
+	line-height:3;
+	text-align:center;
+	margin-bottom:1em;
+}

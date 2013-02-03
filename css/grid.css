@@ -1,0 +1,32 @@
+/*!
+ * grid.css sets up the basic grid structure and corresponding responsive styles
+ */
+
+.row { overflow:hidden; margin:0 auto; max-width:1800px }
+.row .col { float:left; margin-right:2%; min-height:1px }
+.row .col1 { width:6.50% }
+.row .col2 { width:15.0% }
+.row .col3 { width:23.5% }
+.row .col4 { width:32.0% }
+.row .col5 { width:40.5% }
+.row .col6 { width:49.0% }
+.row .col7 { width:57.5% }
+.row .col8 { width:66.0% }
+.row .col9 { width:74.5% }
+.row .col10 { width:83.0% }
+.row .col11 { width:91.5% }
+.row .col12 { float:none }
+.row .fin, .row .col12 { margin-right:0 }
+
+img, object, embed, audio, video { max-width:100% }
+
+@media only screen and (max-width:1820px) {
+	.container { padding-left:1em !important; padding-right:1em !important }
+}
+
+@media only screen and (max-width:767px) {
+	.row .col { float:none; margin-right:0 }
+	.row .col1, .row .col2, .row .col3, .row .col4, 
+	.row .col5, .row .col6, .row .col7, .row .col8, 
+	.row .col9, .row .col10, .row .col11 { width:auto }
+}

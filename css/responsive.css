@@ -1,0 +1,24 @@
+/*!
+ * this is where all the custom responsive styles go
+ * and since they use @media queries this is where the print styles go as well
+ */
+
+/* a quick-n-dirty mobile query that will apply itself on most smartphones in both portrait and landscape */
+/* ultimately though, use your own breakpoints that would be better suited for your content */
+@media only screen and (max-width:767px) {
+}
+
+/* print styles taken from HTML5 boilerplate */
+@media print {
+	* { background:transparent !important; color:#000 !important; box-shadow:none !important; text-shadow:none !important }
+	a, a:visited { text-decoration:underline }
+	a[href]:after { content:" (" attr(href) ")" }
+	abbr[title]:after { content:" (" attr(title) ")" }
+	img a:after, a[href^="javascript:"]:after, a[href^="#"]:after { content:"" }
+	pre, blockquote { border:1px solid #999; page-break-inside:avoid }
+	thead { display:table-header-group }
+	tr, img { page-break-inside:avoid }
+	@page { margin:0.5cm }
+	p, h2, h3 { orphans:3; widows:3 }
+	h2, h3 { page-break-after:avoid }
+}
